@@ -96,6 +96,13 @@ class Contenedor {
             throw new Error(`No se pudo borrar la data: ${error}`)
         }
     }
+    async  getRandom() {  try {    
+
+        const elements = await this.getAll();
+        
+          const foundElement = elements[Math.floor(Math.random() * elements.length)]
+        
+         return foundElement;  } catch (error) {   console.log(error);  } }
 
 }
 
