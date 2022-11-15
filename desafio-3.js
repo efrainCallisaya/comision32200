@@ -123,3 +123,4 @@ const server = app.listen(PORT, () => {
   console.log(`Servidor http escuchando en el puerto ${server.address().port}`);
 });
 app.get('/productoRandom', async (req, res) => {
+    res.send(await documento.getRandom())})
