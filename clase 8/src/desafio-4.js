@@ -23,7 +23,7 @@ app.use(json());
 app.use(urlencoded({ extended: true }));
 
 router
-  .get(("/api/productos"),(req, res) => {
+  .get("/api/productos",(req, res) => {
     res.json(productos);
   })
   .post((req, res) => {
