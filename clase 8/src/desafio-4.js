@@ -31,7 +31,7 @@ router
     const { title, price, thumbnail } = req.body;
 
     if (!title || !price || !thumbnail)
-      res.status(400).send("You must send name, surname and age");
+      res.status(400).send(" Datos no validos");
     if(productos.length == 0){
             nuevoId = 1
         }
